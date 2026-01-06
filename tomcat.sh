@@ -74,7 +74,7 @@ firewall-cmd --reload
 # Download source code
 echo "Downloading source code..."
 cd /home/vagrant
-git clone -b main https://github.com/alaadin2005/aws-sourcecode.git
+git clone -b Master https://github.com/alaadin2005/aws-sourcecode.git
 
 # Update configuration
 echo "Updating configuration..."
@@ -96,4 +96,5 @@ chown -R tomcat:tomcat /usr/local/tomcat/webapps
 systemctl start tomcat
 
 echo "Tomcat setup and deployment is complete."
+
 
